@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <title>Lautaro's Hub XMB</title>
+</head>
+<body>
+  <div class="background-video"> <!--BACKGROUND-->
+    <video autoplay muted loop id="background-video">
+      <source src="./media/xmb-dark-hd.mp4" type="video/mp4">
+    </video>
+  
+    <!--AUDIO-->
+  <audio id="background-music" src="media/xmb audio.mp3" loop></audio>
+  
+  <!--AUDIO CONTROLS-->
+  <div id="audio-controls" style="position: absolute; top: 10px; left: 10px;">
+    <i id="playPauseBtn" class="fas fa-play"></i> <!--BOTON PLAY/PAUSE-->
+    <input type="range" id="volume-control" min="0" max="1" step="0.1" value="1">
+  </div>
+  
+  <!--ICONS-->
+  </div>
+  <div class="icon-container">
+    <div class="icon" data-index="0"><img src="media/linkedin-app-white-icon.webp" alt="Icon 1"></div>
+    <div class="icon" data-index="1"><img src="media/linkedin-app-white-icon.webp"></div>
+    <div class="icon" data-index="2"><img src="media/linkedin-app-white-icon.webp"></div>
+    <div class="icon git" data-index="3"><img src="media/github.png"></div>
+    <div class="icon git" data-index="4"><img src="media/github.png"></div>
+    <div class="icon git" data-index="5"><img src="media/github.png"></div>
+  </div>
+  <script src="scripts.js"></script>
+</body>
+</html>

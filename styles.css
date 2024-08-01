@@ -1,0 +1,100 @@
+/* Fondo de video */
+.background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 50%;
+    z-index: -1;
+    object-fit: cover;
+  }
+  
+  body {
+    margin: 0;
+    overflow: hidden;
+    font-family: sans-serif;
+    color: white;
+    background: rgba(0, 0, 0, 0.5); /* Oscurecer ligeramente el video de fondo */
+  }
+  
+  .icon-container {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .icon {
+    margin: 0 30px;
+    text-align: center;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: opacity 0.3s, transform 0.3s;
+  }
+  
+  .icon img {
+    width: 60px; /* Ajusta el tamaño según sea necesario */
+    height: auto;
+  }
+
+  .icon img {
+    width: 60px; /* Ajusta el tamaño según sea necesario */
+    height: auto;
+  }
+  
+  .git img{
+    width: 90px;
+    height: auto;
+  }
+  
+  .icon:hover {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+
+/*Audio*/
+
+#playPauseBtn {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+#volume-control {
+  position: fixed;
+  top: 10px;
+  left: 40px;
+  cursor: pointer;
+}
+
+  
+  /* Slider Track */
+input[type='range'] {
+  -webkit-appearance: none; /* Removes default slider styles */
+  appearance: none;
+  width: 7%; /* Set the desired width */
+  height: 5px; /* Set the height for the track */
+  background: #fff; /* Track color */
+  outline: none; /* Removes the outline */
+  opacity: 0.5;
+  transition: opacity 0.2s;;
+}
+
+
+/* Slider Thumb */
+input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Removes default thumb styles */
+  appearance: none;
+  width: 15px; /* Set the desired width */
+  height: 15px; /* Set the height */
+  background: #fff; /* Thumb color */
+  cursor: pointer;
+  border-radius: 50%; /* Make the thumb circular */
+}
