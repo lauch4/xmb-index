@@ -1,3 +1,13 @@
+@font-face {
+  font-family: 'Spider'; /* Name of the font family */
+  src: url('fonts/PhatBoy-Slim.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+
 /* Fondo de video */
 .background-video {
     position: fixed;
@@ -17,6 +27,27 @@
     background: rgba(0, 0, 0, 0.5); /* Oscurecer ligeramente el video de fondo */
   }
   
+/*title*/
+
+
+/* Estilo para el contenedor principal */
+.container {
+  display: flex;
+  justify-content: center; /* Centra el contenido horizontalmente */
+  align-items: center;     /* Centra el contenido verticalmente */
+  height: 10rem;           /* Opcional: Ajusta la altura del contenedor al 100% del viewport */
+}
+
+/* Estilo para el contenido dentro del contenedor */
+.title {
+  margin-top: 12rem;
+  text-align: center;      /* Centra el texto dentro del div */
+  opacity: 0.5;
+  font-family: 'Spider', sans-serif;
+}
+
+
+
   .icon-container {
     position: absolute;
     bottom: 50%;
@@ -57,22 +88,21 @@
 
 /*Audio*/
 
-#playPauseBtn {
-  position: fixed;
+/* #audio-controls {
+  position: absolute;
   top: 10px;
   left: 10px;
-  font-size: 20px;
-  color: white;
+} */
+
+#playPauseBtn {
+  font-size: 24px; /* Ajusta el tamaño de acuerdo a lo que necesites */
   cursor: pointer;
-  opacity: 0.5;
 }
 
 #volume-control {
-  position: fixed;
-  top: 10px;
-  left: 40px;
-  cursor: pointer;
+  width: 150px; /* Ajusta el ancho según el diseño */
 }
+
 
   
   /* Slider Track */
